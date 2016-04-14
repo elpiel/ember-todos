@@ -5,6 +5,12 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
+    adminLTE: {
+      plugins: ['morris', 'icheck', 'datepicker',
+        'bootstrap-wysihtml5', 'daterangepicker', 'jvectormap',
+        'select2', 'input-mask'
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
