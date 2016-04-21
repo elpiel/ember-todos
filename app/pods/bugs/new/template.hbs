@@ -1,0 +1,13 @@
+<div>
+    Title: {{input value=model.title}}
+</div>
+
+<div>
+    Description: {{input value=model.description}}
+</div>
+
+<div>
+    <button {{action 'create' model }}>Save</button>
+</div>
+
+{{outlet}}

@@ -1,0 +1,9 @@
+<h3>All bugs:</h3>
+
+<ul>
+    {{#each model as |bug|}}
+        <li>{{#link-to "bugs.edit" bug }}{{ bug.title }}{{/link-to}}</li>
+    {{/each}}
+</ul>
+
+{{outlet}}
